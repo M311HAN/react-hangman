@@ -19,6 +19,7 @@
   font-size: 22px; /* Increase font size */
   cursor: pointer;
   transition: background-color 0.3s;
+  color: black;
 }
 
 .key.correct {
