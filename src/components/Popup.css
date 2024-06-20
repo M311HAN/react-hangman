@@ -1,0 +1,45 @@
+/* Popup.css */
+.popup-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .popup {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Ensure the pop-up does not affect the layout */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Make sure it's on top of other elements */
+  }
+  
+.popup-title {
+    font-size: 2rem; /* Increase the title size */
+    font-weight: bold;
+  }
+  
+  .popup-message {
+    font-size: 1.2rem; /* Decrease the message size */
+  }
+
+  /* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .popup-title {
+      font-size: 1.5rem; /* Decrease the title size for mobile */
+    }
+  
+    .popup-message {
+      font-size: 1rem; /* Adjust the message size if needed */
+    }
+  }

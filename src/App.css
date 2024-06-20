@@ -1,0 +1,138 @@
+/* App.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.word {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.letter {
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 5px;
+  padding: 0 10px;
+}
+
+.wrong-letters-container {
+  margin-top: 20px;
+}
+
+.figure-container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.reset-button {
+  background-color: #6bd1fd; /* Blue color similar to the help button */
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners to match the help button */
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Add gap between buttons */
+}
+
+.reset-button:hover {
+  background-color: #78dbf9;
+}
+
+.hint-button {
+  background-color: #6bd1fd; /* Blue color for hint button */
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners to match the help button */
+  transition: background-color 0.3s ease;
+}
+
+.hint-button:hover {
+  background-color: #78dbf9;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Adjust margin to bring buttons container closer to keyboard */
+  flex-wrap: wrap; /* Allow buttons to wrap if needed */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .word {
+    margin: 10px 0;
+  }
+
+  .letter {
+    font-size: 1.5rem;
+    margin: 0 3px;
+    padding: 0 5px;
+  }
+
+  .keyboard-container {
+    grid-template-columns: repeat(5, 1fr); /* Reduce the number of columns on mobile */
+    padding: 10px;
+  }
+
+  .key {
+    padding: 15px 20px; /* Increase padding */
+    font-size: 18px; /* Increase font size */
+  }
+
+  .reset-button,
+  .hint-button {
+    padding: 12px 24px; /* Increase padding */
+    font-size: 16px; /* Increase font size */
+    margin: 5px; /* Adjust margin to bring closer to the keyboard */
+  }
+
+  .buttons-container {
+    flex-direction: row; /* Keep buttons in a row */
+    justify-content: center; /* Center the buttons */
+    margin-top: 5px; /* Adjust margin to bring buttons container closer to keyboard */
+  }
+
+  header {
+    font-size: calc(8px + 2vmin);
+  }
+}
+
+
+
+
+

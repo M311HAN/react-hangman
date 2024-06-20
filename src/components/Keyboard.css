@@ -1,0 +1,52 @@
+/* Keyboard.css */
+.keyboard-container {
+  display: grid;
+  grid-template-columns: repeat(10, auto); /* Adjust the columns */
+  gap: 5px;
+  padding: 20px;
+  justify-content: center; /* Center the keyboard within the grid */
+  margin: 0 auto; /* Center the container horizontally */
+  max-width: 700px; /* Increase the maximum width */
+  padding-top: 30px;
+}
+
+.key {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 25px; /* Increase padding */
+  margin: 2px;
+  font-size: 22px; /* Increase font size */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.key.correct {
+  background-color: #8bcd84ee; /* Green for correct letters, matching the screenshot */
+  color: rgb(0, 0, 0);
+}
+
+.key.wrong {
+  background-color: #f37a64ed; /* Red for wrong letters, matching the screenshot */
+  color: rgb(0, 0, 0);
+}
+
+.key:disabled {
+  cursor: default; /* Change to default cursor instead of not-allowed */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .keyboard-container {
+    grid-template-columns: repeat(5, 1fr); /* Adjust the columns for mobile */
+    padding: 10px;
+  }
+
+  .key {
+    padding: 18px 22px; /* Increase padding */
+    font-size: 20px; /* Increase font size */
+  }
+}
+
+  
+  
