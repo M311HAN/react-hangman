@@ -2,6 +2,9 @@
 
 Check out the live demo [here](https://M311HAN.github.io/react-hangman/).
 
+I have also deployed the app using Heroku. Check out the live demo [here](https://pure-eyrie-99914-9562340171be.herokuapp.com).
+
+
 ![Hangman game](public/hangman.png)
 
 A classic Hangman game built using React.
