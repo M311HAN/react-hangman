@@ -1,8 +1,11 @@
 # Hangman Game
 
-Check out the live demo [here](https://M311HAN.github.io/react-hangman/).
+## Live Demo
 
-I have also deployed the app using Heroku. Check out the live demo [here](https://pure-eyrie-99914-9562340171be.herokuapp.com).
+I have deployed the app using both GitHub Pages and Heroku. Check out the live demos below:
+
+- GitHub Pages: [here](https://M311HAN.github.io/react-hangman/)
+- Heroku: [here](https://pure-eyrie-99914-9562340171be.herokuapp.com)
 
 
 ![Hangman game](public/hangman.png)
