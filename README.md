@@ -7,6 +7,8 @@ I have deployed the app using both GitHub Pages and Heroku. Check out the live d
 - GitHub Pages: [here](https://M311HAN.github.io/react-hangman/)
 - Heroku: [here](https://pure-eyrie-99914-9562340171be.herokuapp.com)
 
+**Note:** The Heroku Dyno is currently turned off to prevent unnecessary costs. If you need to view the live demo on Heroku, please contact me, and I can temporarily enable the Dyno.
+
 
 ![Hangman game](public/hangman.png)
 
